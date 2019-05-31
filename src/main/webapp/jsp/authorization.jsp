@@ -1,17 +1,17 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Login Page</title>
 </head>
-
-<h2>Hello, please log in:</h2>
-<br><br>
+<body>
 <form action="/hello" method="post">
-    <p><strong>Please Enter Your User Name: </strong>
-    <input type="text" name="j_username" size="25">
-    <p><p><strong>Please Enter Your Password: </strong>
-    <input type="password" size="15" name="j_password">
+    <p><strong>Логин </strong>
+        <input type="text" name="j_username" size="15">
+    <p><p><strong>Пароль </strong>
+    <input type="password" name="j_password" size="15">
     <p><p>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
+    <input type="submit" value="Войти">
 </form>
+</body>
 </html>
