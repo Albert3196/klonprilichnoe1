@@ -18,17 +18,10 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>authorization</servlet-name>
-        <url-pattern>/log</url-pattern>
+        <url-pattern>/authorization</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>TestServlet</servlet-name>
-        <servlet-class>moc.vonidnikA.neutralesprojekt.PageServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>TestServlet</servlet-name>
-        <url-pattern>/hello</url-pattern>
-    </servlet-mapping>
+
 
     <servlet>
         <servlet-name>main</servlet-name>

@@ -9,7 +9,7 @@
 
 АВТОРИЗАЦИЯ:
 
-<form method="get" action="authorization.jsp">
+<form method="get" action="/authorization">
     <table>
         <tr>
             <td><label for="loginField">Логин</label></td>
