@@ -1,17 +1,26 @@
-<!DOCTYPE html>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.Date" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page pageEncoding="UTF-8" %>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Login Page</title>
-</head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="<c:url value="/styles/main.css"/>">
 <body>
-<form action="/hello" method="post">
-    <p><strong>Логин </strong>
-        <input type="text" name="j_username" size="15">
-    <p><p><strong>Пароль </strong>
-    <input type="password" name="j_password" size="15">
-    <p><p>
-    <input type="submit" value="Войти">
+
+АВТОРИЗАЦИЯ:
+
+<form method="get" action="authorization.jsp">
+    <table>
+        <tr>
+            <td><label for="loginField">Логин</label></td>
+            <td><input id="loginField" type="text" name="login"></td>
+        </tr>
+        <tr>
+            <td><label for="passwordField">Пароль</label></td>
+            <td><input id="passwordField" type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center"><input type="submit" value="Войти"></td>
+        </tr>
+    </table>
 </form>
-</body>
-</html>

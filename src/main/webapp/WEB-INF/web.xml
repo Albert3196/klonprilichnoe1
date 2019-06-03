@@ -13,12 +13,30 @@
     <display-name>Archetype Created Web Application</display-name>
 
     <servlet>
+        <servlet-name>authorization</servlet-name>
+        <servlet-class>moc.vonidnikA.neutralesprojekt.Authorization</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>authorization</servlet-name>
+        <url-pattern>/log</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>TestServlet</servlet-name>
         <servlet-class>moc.vonidnikA.neutralesprojekt.PageServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TestServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>main</servlet-name>
+        <servlet-class>moc.vonidnikA.neutralesprojekt.Main</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>main</servlet-name>
+        <url-pattern>/index</url-pattern>
     </servlet-mapping>
 
 </web-app>
