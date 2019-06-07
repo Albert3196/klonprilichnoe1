@@ -15,8 +15,8 @@ public class Authorization extends HttpServlet {
 
     {
         users.put("admin","admin");
-        users.put("albertik","albertik");
-        users.put("katya","katya");
+        users.put("albertik","1");
+        users.put("buzma","2");
     }
 
 
