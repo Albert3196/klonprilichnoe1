@@ -10,16 +10,13 @@ import java.util.Map;
 
 public class Authorization extends HttpServlet {
 
-    static Map<String,String> users=new HashMap<String, String>();
-
+    static Map<String,String> users = new HashMap<String, String>();
 
     {
         users.put("admin","admin");
         users.put("albertik","1");
         users.put("buzma","2");
     }
-
-
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,10 +25,9 @@ public class Authorization extends HttpServlet {
         String passwordField = req.getParameter("password");
 
         try {
-
-
             if (users.get(loginField).equals(passwordField)) {
                 req.getSession().setAttribute("IsAuthorization", true);
+                req.getSession().setAttribute("login", loginField);
             }
 
         } catch (NullPointerException e) {
@@ -39,6 +35,5 @@ public class Authorization extends HttpServlet {
         }
 
         resp.sendRedirect("/index");
-//        req.getRequestDispatcher("/index").forward(req, resp);
     }
 }

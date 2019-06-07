@@ -21,8 +21,6 @@
         <url-pattern>/authorization</url-pattern>
     </servlet-mapping>
 
-
-
     <servlet>
         <servlet-name>main</servlet-name>
         <servlet-class>moc.vonidnikA.neutralesprojekt.Main</servlet-class>

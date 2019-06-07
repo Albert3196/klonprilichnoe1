@@ -17,6 +17,7 @@ public class Data {
     }
 
     ArrayList<Cookie> cookies = new ArrayList<Cookie>();
+    ArrayList<Order> orders = new ArrayList<Order>();
 
     //получить печеньки
     public ArrayList<Cookie> getCookies() {
@@ -31,6 +32,21 @@ public class Data {
             }
         }
         return null;
+    }
+
+    //установить заказ
+    public void setOrders(ArrayList<Order> orders) {
+        this.orders = orders;
+    }
+
+    //получить заказ прользователя
+    public  Order getOrderByLogin(String login) {
+        for (Order or : orders) {
+            if (or.getLogin() == login) {
+                return or;
+            }
+        }
+        return new Order();
     }
 
     public void initData() {
